@@ -79,7 +79,7 @@ After completing this activity, I can:
 
 
 ![alt text](path-to-image)
-![Lab status showing "ready" in the Start Lab panel](Module1\images\image1.png)
+![Lab status showing "ready" in the Start Lab panel](Module1/images/image1.png)
 
 
 ---
