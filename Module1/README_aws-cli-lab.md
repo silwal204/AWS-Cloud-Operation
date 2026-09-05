@@ -253,8 +253,6 @@ The activity is complete when:
 - ✅ `aws configure` completed with the lab credentials, region `us-east-1`, output `json`
 - ✅ `aws iam list-users` returns a JSON list of IAM users matching what the IAM console showed
 
-📸 **Final Result Screenshot:** Insert your final successful `aws iam list-users` JSON output here.
-
 ---
 
 ## 8. Key Takeaways
