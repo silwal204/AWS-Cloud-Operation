@@ -80,7 +80,7 @@ After completing this lab, I can:
 1. Click **Start Lab**, wait for **Lab status: ready**, then click **AWS** to open the console.
 2. **Do not change the Region** unless the lab instructions say so — Systems Manager associations and parameters are region-scoped, and the lab resources exist in one specific region.
 
-![AWS Academy lab panel showing Lab status: ready](img\m1.png)
+![AWS Academy lab panel showing Lab status: ready](img/m1.png)
 
 *Figure 1: AWS Academy lab panel showing "Lab status: ready" before opening the console.*
 
