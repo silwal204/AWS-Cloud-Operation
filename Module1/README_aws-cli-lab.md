@@ -78,8 +78,8 @@ After completing this activity, I can:
 3. Keep the console tab open beside the instructions — you'll return to it in Task 3.
 
 
-![alt text](path-to-image)
-![Lab status showing "ready" in the Start Lab panel](Module1\images\image1.png)
+
+![Lab status showing "ready" in the Start Lab panel](images/image1.png)
 
 
 ---
@@ -94,14 +94,14 @@ After completing this activity, I can:
 4. Expand **Connection → SSH → Auth → Credentials**, browse to the `labsuser.ppk` file, then open the connection.
 5. Accept the host key prompt (first connection only), then log in as **`ec2-user`**.
 
-![Deatils page](Module1\detail.png)
+![Deatils page](images/detail.png)
 
 > ⚠️ **Note:** The copy of the lab file I documented from did not include the numbered steps for **macOS/Linux users** or the step where the instance's Public DNS is noted. If you're on macOS/Linux, confirm those steps against your own lab instructions (typically: `chmod 400 labsuser.pem`, then `ssh -i labsuser.pem ec2-user@<public-dns>`).
 
 
 
 ![ Successful PuTTY/terminal login showing the `ec2-user` prompt on the Red Hat instance.
-](Module1\images\ec2-user_login.png)
+](images/ec2-user_login.png)
 
 **Why this task matters:** everything after this point happens *inside* the instance. A dropped or misconfigured SSH session is the #1 reason this lab stalls.
 
@@ -142,7 +142,7 @@ All commands below run in the SSH terminal on the EC2 instance.
    ```
 
   You should see the AWS CLI help pages. Press `q` to exit.
-![Terminal output of `aws help` showing the CLI help screen.](Module1\images\aws_help.png)
+![Terminal output of `aws help` showing the CLI help screen.](images/aws_help.png)
 
 
 ---
@@ -158,7 +158,7 @@ All commands below run in the SSH terminal on the EC2 instance.
 **Why this task matters:** it connects the console view of IAM with the credentials you'll hand to the CLI in Task 4. Understanding that a secret key is shown **once, at creation time** is a real-world security lesson, not just lab trivia.
 
 ![The `awsstudent` user's `lab_policy` JSON document in the IAM console.
-](Module1\images\iam_json.png)
+](images/iam_json.png)
 
 
 ---
@@ -182,7 +182,7 @@ All commands below run in the SSH terminal on the EC2 instance.
 
    *What this actually does:* `aws configure` writes these values into `~/.aws/credentials` and `~/.aws/config` on the instance. From now on, every `aws` command you run uses them automatically.
 
-![ Terminal showing `aws configure` completed (credentials hidden/cropped when publishing!)](Module1\images\awscli.png)
+![ Terminal showing `aws configure` completed (credentials hidden/cropped when publishing!)](images/awscli.png)
 
 
 > 🔒 **Publishing tip:** never include real access keys in public screenshots — crop or blur them. In the lab environment the keys are temporary, but building the habit matters.
@@ -201,7 +201,7 @@ All commands below run in the SSH terminal on the EC2 instance.
 
 **Why JSON matters:** because the output is machine-readable, you can pipe it into tools like `jq`, scripts, or automation pipelines — which is exactly why cloud operators prefer the CLI for repeated tasks.
 
-![Terminal output of `aws iam list-users` returning the JSON user list](Module1\images\iam_json.png)
+![Terminal output of `aws iam list-users` returning the JSON user list](images/iam_json.png)
 
 
 
@@ -252,8 +252,6 @@ The activity is complete when:
 - ✅ `aws help` displays the CLI help inside the terminal (CLI installed)
 - ✅ `aws configure` completed with the lab credentials, region `us-east-1`, output `json`
 - ✅ `aws iam list-users` returns a JSON list of IAM users matching what the IAM console showed
-
-📸 **Final Result Screenshot:** Insert your final successful `aws iam list-users` JSON output here.
 
 ---
 
