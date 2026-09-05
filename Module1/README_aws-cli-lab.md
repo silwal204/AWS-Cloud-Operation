@@ -78,7 +78,7 @@ After completing this activity, I can:
 3. Keep the console tab open beside the instructions — you'll return to it in Task 3.
 
 
-![alt text](path-to-image)
+
 ![Lab status showing "ready" in the Start Lab panel](images/image1.png)
 
 
@@ -94,7 +94,7 @@ After completing this activity, I can:
 4. Expand **Connection → SSH → Auth → Credentials**, browse to the `labsuser.ppk` file, then open the connection.
 5. Accept the host key prompt (first connection only), then log in as **`ec2-user`**.
 
-![Deatils page](detail.png)
+![Deatils page](images/detail.png)
 
 > ⚠️ **Note:** The copy of the lab file I documented from did not include the numbered steps for **macOS/Linux users** or the step where the instance's Public DNS is noted. If you're on macOS/Linux, confirm those steps against your own lab instructions (typically: `chmod 400 labsuser.pem`, then `ssh -i labsuser.pem ec2-user@<public-dns>`).
 
